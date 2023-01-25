@@ -1,15 +1,21 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import instagram from "../assets/instagram.svg"
 import linkedin from "../assets/linkedin.svg"
 import github from "../assets/github.svg"
 
 export const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <section
         className="w-full h-screen flex flex-col justify-center items-center"
         id="home"
         >
-        <div className="w-4/6 mx-auto md:h-full mt-12 md:mt-32">
+        <div className="lg:w-3/6 xs:w-5/6 mx-auto   ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -21,22 +27,25 @@ export const Contact = () => {
                 }}
             >
                 <h1 className="font-montserrat text-5xl font-bold">
-                Let's chat
+                Let's build something together!
                 </h1>
 
-                <p className="mt-10 mb-7 text-sm text-center md:text-start" >
+                <p className="mt-10 mb-7 text-xl " >
                 minhajislam674@gmail.com
                 </p>
 
-                <div class="flex items-center">
-                    <a href="https://instagram.com">
-                        <img className="w-10" src={linkedin} alt="instagram icon"/>
+                <p className="mt-10 mb-2 text-xl"> Find me on:</p>
+
+                <div class="flex items-center gap-5">
+                    
+                    <a href="https://www.linkedin.com/in/minhajislam//" target="_blank" rel="noreferrer">
+                        <img className="w-10 hover:opacity-75" src={linkedin} alt="instagram icon"/>
                     </a>
-                    <a href="https://instagram.com">
-                        <img className="w-10" src={instagram} alt="instagram icon"/>
+                    <a href="https://www.instagram.com/minhajtakim/" target="_blank" rel="noreferrer">
+                        <img className="w-10 hover:opacity-75" src={instagram} alt="instagram icon"/>
                     </a>
-                    <a href="https://instagram.com">
-                        <img className="w-10" src={github} alt="instagram icon"/>
+                    <a href="https://github.com/minhajislam674/" target="_blank" rel="noreferrer">
+                        <img className="w-10 hover:opacity-75" src={github} alt="instagram icon"/>
                     </a>
                 </div>
 

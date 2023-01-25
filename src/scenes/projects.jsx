@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import projectImg from '../assets/Project-one-01.jpg';
 import projectImg2 from '../assets/Project-two-01.jpg';
 import projectImg3 from '../assets/Project-three-01.jpg';
 
 export const Projects = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
-        <div className="w-4/6 mx-auto md:h-full mt-12 md:mt-32  text-white ">
+        <div className="lg:w-3/6 xs:w-4/6 mx-auto  mt-12 xs:mt-32  text-white ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -36,13 +39,13 @@ export const Projects = () => {
                 <div class="grid gap-10 lg:grid-cols-2 mb-10">
                     <div class="flex flex-col text-left">
                         <h1 class="text-4xl mb-2">OscarFlicks </h1>
-                        <p class="text-xl">
+                        <p class="text-xl leading-8">
                             OscarFlicks was a project I built as part of my full-stack web development program at CareerFoundry to demonstrate my mastery of full-stack JavaScript development. The goal of the project was to develop the complete server-side and client-side for the application from scratch.
                         </p>
                         <div class= "mb-5">
                             <button
                                 type="button"
-                                className="p-3 bg-pink font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="p-3 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
                             >
                                 VIEW PROJECT
                             </button>
@@ -79,13 +82,13 @@ export const Projects = () => {
 
                     <div class="flex flex-col text-left">
                         <h1 class="text-4xl mb-2">ChatMate App </h1>
-                        <p class="text-xl">
+                        <p class="text-xl leading-8">
                         ChatMate is an app for mobile devices built using React Native. The app will provide users with a chat interface and options to share images and their location.
                         </p>
                         <div class= "mb-5">
                             <button
                                 type="button"
-                                className="p-3 bg-pink font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="p-3 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
                             >
                                 VIEW PROJECT
                             </button>
@@ -107,13 +110,13 @@ export const Projects = () => {
                 <div class="grid gap-10 lg:grid-cols-2 mb-10">
                     <div class="flex flex-col text-left">
                         <h1 class="text-4xl mb-2">Meet App </h1>
-                        <p class="text-xl">
+                        <p class="text-xl leading-8">
                         Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. It provides users access to different tech events and workshops around the world.
                         </p>
                         <div class= "mb-5">
                             <button
                                 type="button"
-                                className="p-3 bg-pink font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="p-3 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
                             >
                                 VIEW PROJECT
                             </button>

@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 
 
 
 export const Home = ({setSelectedPage}) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
     // const isAboveMediumScreeen = useMediaQuery("(max-width: 1060px)");
 
     return (
@@ -11,7 +18,8 @@ export const Home = ({setSelectedPage}) => {
             className="w-full h-screen flex flex-col justify-center items-center"
             id="home"
         >
-        <div className="w-4/6  mx-auto md:h-full mt-12 lg:mt-32 text-white ">
+        
+        <div className="lg:w-3/6 xs:w-5/6 mx-auto xs:mt-16 text-white ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -22,28 +30,34 @@ export const Home = ({setSelectedPage}) => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <h1 className="font-montserrat text-5xl font-bold">
-                Hi, I'm Minhaj
+                <h1 className="font-montserrat xs:text-xl md:text-3xl  ">
+                👋🏼 Hi there, I’m Minhaj and I’m...
                 </h1>
 
-                <p className="w-4/6 mt-10 mb-7 font-montserrat text-xl md:text-start" >
-                I'm a Full-stack Javascript developer based in Germany. I love to keep learning and evolving. I have a passion for working with cutting-edge technologies.
+                <p className="mt-5 mb-7 font-montserrat xs:text-2xl md:text-5xl md:text-start font-bold leading-8" >
+                A Full-stack Javascript developer based in Germany. My passion is building simple and beautiful user experiences. I love to keep learning and evolving.
                 </p>
-            </motion.div>
 
-            <motion.div
-                className="flex mt-5 justify-center md:justify-start"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-                variants={{
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0 },
-                }}
-            >
-            </motion.div>           
+
+  
+                <NavLink to="/projects">
+                    <button
+                        type="button"
+                        className="px-8 py-4 w-48 mr-5 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                    >  
+                    MY WORK
+                    </button>
+                </NavLink>
+                    
+                
+
+
+    
+            </motion.div>       
         </div>
-        </section>
+        
+    </section>
+
+        
     )
 }

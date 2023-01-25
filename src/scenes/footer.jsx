@@ -1,73 +1,44 @@
 
-import { Link } from "react-scroll";
-export const Footer = ({selectedPage, setSelectedPage}) => {
+
+import LineGradient from "./gradient-line";
+
+export const Footer = () => {
+
   return (
-    <footer className="h-40 bg-blue pt-5">
+    <>
+    <LineGradient/>
+    <footer className="h-48 bg-light pt-5">
       <div className="w-10/12 mx-auto">
-        <div className="md:flex justify-center md:justify-between">
+        <div className="md:flex justify-center md:justify-between pt-5">
           <p className="font-montserrat text-sm text-white md:justify-end text-left">
-            <span className="font-bold text-lg" >Md Minhaj Ul Islam</span>
+            <span className="font-bold text-lg"> ©2022. Minhaj Islam</span>
             <br></br>
-            ©2022. Built and designed by Md Minhaj Ul Islam
+            Built and designed with 💙 by Minhaj Islam
           </p>
           
-        <div className="flex flex-wrap w-40" >
-            <p className="font-montserrat text-sm text-white">
-                Links
-            </p>
-          <div className="md:justify-between">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setSelectedPage("home")}
-            style={{cursor: "pointer"}}
-        >
-            Home
-            </Link>
-            <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setSelectedPage("about")}
-                style={{cursor: "pointer"}}
+          
+          <div className="text-md flex flex-row gap-3">
+            <p>Let's get in touch.</p>
+            <a className=" underline  hover:text-blue-light"
+              href="https://www.linkedin.com/in/minhajislam/"
             >
-                About
-            </Link>
-            <Link
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setSelectedPage("projects")}
-                style={{cursor: "pointer"}}
+              LinkedIn
+            </a>
+            <a className=" underline  hover:text-blue-light"
+              href="https://github.com/minhajislam674/"
             >
-                Projects
-            </Link>
-            <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setSelectedPage("contact")}
-                style={{cursor: "pointer"}}
+              GitHub
+            </a>
+            <a className=" underline  hover:text-blue-light"
+              href="https://www.instagram.com/minhajtakim/"
             >
-                Contact
-            </Link>
+              Instagram
+            </a>
           </div>
 
-          </div>
-          <p className="font-montserrat text-sm text-white">
-            Get in touch
-          </p>
         </div>
       </div>
     </footer>
+    </>
   );
 };

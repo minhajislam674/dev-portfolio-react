@@ -1,3 +1,4 @@
 .active {
-    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 10;
 }
