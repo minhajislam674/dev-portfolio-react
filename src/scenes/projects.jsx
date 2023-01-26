@@ -46,7 +46,7 @@ export const Projects = () => {
                         <NavLink to="/projects/oscar-flicks">
                             <button
                                 type="button"
-                                className="px-8 py-4 w-48 mr-5 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                             >  
                             VIEW PROJECT
                             </button>
@@ -89,7 +89,7 @@ export const Projects = () => {
                         <NavLink to="/projects/chat-app">
                             <button
                                 type="button"
-                                className="px-8 py-4 w-48 mr-5 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                             >  
                             VIEW PROJECT
                             </button>
@@ -119,7 +119,7 @@ export const Projects = () => {
                         <NavLink to="/projects/meet-app">
                             <button
                                 type="button"
-                                className="px-8 py-4 w-48 mr-5 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                             >  
                             VIEW PROJECT
                             </button>

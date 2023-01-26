@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <>
     <LineGradient/>
-    <footer className="h-48 bg-light pt-5">
+    <footer className="h-36 bg-light pt-5">
       <div className="w-10/12 mx-auto">
         <div className="md:flex justify-center md:justify-between pt-5">
           <p className="font-montserrat text-sm text-white md:justify-end text-left">

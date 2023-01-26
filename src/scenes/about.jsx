@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import imageMinhaj from "../assets/image-minhaj.jpg"
+import imageMinhaj from "../assets/headshot.png"
 
 export const About = () => {
 
