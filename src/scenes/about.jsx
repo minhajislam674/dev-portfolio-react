@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import imageMinhaj from "../assets/image-minhaj.jpg"
 
-export const About = ({setSelectedPage}) => {
+export const About = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
