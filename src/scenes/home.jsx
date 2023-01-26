@@ -26,7 +26,7 @@ export const Home = ({setSelectedPage}) => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <h1 style={{lineHeight: 1.5}} className="font-montserrat xs:text-xl md:text-3xl   ">
+                <h1 style={{lineHeight: 1.5}} className="font-montserrat xs:text-xl md:text-3xl text-blue-light">
                 👋🏼 Hi there, I’m Minhaj and I’m...
                 </h1>
 
@@ -37,7 +37,7 @@ export const Home = ({setSelectedPage}) => {
                 <NavLink to="/projects">
                     <button
                         type="button"
-                        className="px-8 py-4 w-48 mr-5 bg-blue-light font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+                        className="py-4 w-48 mr-5border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                     >  
                     SEE MY WORK
                     </button>
