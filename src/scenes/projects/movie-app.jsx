@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
 import { useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
 
 export const MovieApp = () => {
@@ -9,16 +9,11 @@ export const MovieApp = () => {
 
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+            
+                <div className="flex flex-row gap-9 mx-auto mb-5">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
+
                 <h1 className="mb-10 font-montserrat text-5xl font-bold  ">
                     OscarFlicks
                 </h1>
@@ -83,18 +78,8 @@ export const MovieApp = () => {
                     className="h-auto pb-5"
                 >
                 </img>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Purpose & Objective
                 </h2>
@@ -104,18 +89,7 @@ export const MovieApp = () => {
 
                 </p>
 
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Approach
                 </h2>
@@ -129,7 +103,7 @@ export const MovieApp = () => {
                 JSON Web Tokens (JWT) and included data validation logic to ensure that the data entered 
                 by the user is accurate and secure. Finally, I used Postman to test the 
                 <a className="text-xl md:text-start leading-8 text-blue-light hover:underline"
-                            href="https://github.com/minhajislam674/myflix-react"
+                            href="https://myflix-movies.onrender.com/documentation/"
                             target="_blank"
                             rel="noreferrer"> API endpoints
                 </a>, 
@@ -141,17 +115,7 @@ export const MovieApp = () => {
                     className="h-auto pb-5"
                 >
                 </img>
-            </motion.div>
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.4 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
                 <h3 className="font-montserrat text-xl font-bold mt-5">
                     Client-Side
                 </h3>
@@ -164,26 +128,16 @@ export const MovieApp = () => {
                     className="h-auto pb-5"
                 >
                 </img>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.4 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Challenges And Learnings
                 </h2>
                 <p className="mt-2 mb-10 text-md text-xl md:text-start leading-8">
                     The application required several different views, and implementing routing to handle these different views and provide a seamless navigation experience for the users was a significant challenge. Besides, in development mode, when I ran the application on my local machine, the JavaScript code was able to manipulate the current URL and redirect the user to a different page. However, in production, when the application is deployed on a static host like Netlify, the routing is handled by the server. So, I faced several issues like handling the 404 error pages after deployment, but with the help of my mentor and tutor, and by carefully handling the routes and navigation, I was able to tackle the problems.
                 </p>
-            </motion.div>
-
+                <div className="flex flex-row gap-9 mx-auto mb-10">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
             
         </div>
     )

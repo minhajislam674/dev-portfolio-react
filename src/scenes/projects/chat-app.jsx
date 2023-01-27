@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
 import { useEffect } from "react"
+import { NavLink } from "react-router-dom"
 // import { NavLink } from "react-router-dom";
 
 
@@ -10,16 +10,11 @@ export const ChatApp = () => {
 
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
+                <div className="flex flex-row gap-9 mx-auto mb-5">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
+
                 <h1 className="mb-10 font-montserrat text-5xl font-bold  ">
                     ChatMate App
                 </h1>
@@ -76,18 +71,7 @@ export const ChatApp = () => {
                     className="h-auto pb-5"
                 >
                 </img>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Key Features
                 </h2>
@@ -103,18 +87,6 @@ export const ChatApp = () => {
                     </ul>
                 </p>
 
-            </motion.div>
-
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Approach
                 </h2>
@@ -148,34 +120,18 @@ export const ChatApp = () => {
                 <p className="mt-2 mb-10 text-md text-xl md:text-start leading-8">
                     I created a button in the input field that opens an Actionsheet with few actions: select an image from the library, open camera, and share location. I created a function that would first ask the user for permission to access their library. Then, the function would use expo-image-picker API to open the device's library and allow the user to select an image. Similarly, expo-location and expo-camera API were used for other actions.
                 </p>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Further Work
                 </h2>
                 <p className="mt-2 mb-10 text-md text-xl md:text-start leading-8">
                 The next step would be to implement the ability to send audio messages in addition to text and images. Additionally, I plan to upgrade from anonymous authentication to Phone or Email/Password authentication. 
                 </p>
-            </motion.div>
 
-            {/* <NavLink to="/projects">
-                    <button
-                        type="button"
-                        className="px-8 py-4 w-48 mr-5 border-solid border-2 border-white font-semibold text-deep-blue mt-5 mb-5 hover:bg-white hover:text-black transition duration-500"
-                    >  
-                    BACK
-                    </button>
-            </NavLink> */}
+                <div className="flex flex-row gap-9 mx-auto mb-5">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
+
         </div>
     )
 }

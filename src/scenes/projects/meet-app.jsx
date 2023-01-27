@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
 import { useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
 
 export const MeetApp = () => {
@@ -9,16 +9,11 @@ export const MeetApp = () => {
 
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
+                <div className="flex flex-row gap-9 mx-auto mb-5">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
+
                 <h1 className="mb-10 font-montserrat text-5xl font-bold  ">
                     Meet App
                 </h1>
@@ -77,18 +72,9 @@ export const MeetApp = () => {
 
                 
                 </img>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
+
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Purpose & Objective
                 </h2>
@@ -102,18 +88,9 @@ export const MeetApp = () => {
 
                 </p>
 
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
+
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Approach
                 </h2>
@@ -127,18 +104,9 @@ export const MeetApp = () => {
                  I implemented Web App Manifest and Service Worker to turn the app into a PWA, and used Lighthouse to evaluate its performance and qualifications.
                   Finally, I used Recharts, a React-based visualization library, to add a pie chart and scatter plot to the app.
                 </p>
-            </motion.div>
 
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
+
+
                 <h2 className="font-montserrat text-3xl font-bold mt-5">
                     Challenges And Learnings
                 </h2>
@@ -149,7 +117,11 @@ export const MeetApp = () => {
                 and that is to use the React testing library instead of Enzyme. 
                 This is because Enzyme is no longer actively supported in React-based applications.
                 </p>
-            </motion.div>
+
+                <div className="flex flex-row gap-9 mx-auto mb-10">
+                    <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
+                </div>
+
 
             
         </div>
