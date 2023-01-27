@@ -11,14 +11,15 @@ const Navbar = () => {
     const isDesktop = useMediaQuery("(min-width: 768px)");
     const [isMenuToggled, setIsMenuToggled] = useState(false);
 
+
     return (
-        <nav className={`z-40 w-full fixed top-0 py-6`}>
+        <nav className={`z-40 w-full bg-bg-dark fixed top-0 py-6`}>
           <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-playfair text-3xl font-bold">MI</h4>
+            <h4 className="font-playfair text-3xl font-bold text-blue-light">MI</h4>
     
             {/* DESKTOP NAV */}
             {isDesktop ? (
-              <div className=" flex justify-between gap-16 font-opensans text-xl font-semibold">
+              <div className=" flex justify-between gap-16 font-opensans text-xl font-semibold text-blue-light">
                 <NavLink
                     to="/"
                     className="hover:underline underline-offset-8"

@@ -55,10 +55,6 @@ export const Home = ({setSelectedPage}) => {
                 </a>  
                 </div>
  
-
-
-
-                    
             </motion.div>       
         </div>
         
