@@ -12,7 +12,7 @@ export const Projects = () => {
     }, []);
 
     return (
-        <div className="lg:w-3/6 xs:w-4/6 mx-auto  mt-12 xs:mt-32  text-white ">
+        <div className="lg:w-3/6 xs:w-5/6 mx-auto  mt-12 xs:mt-32  text-white ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -23,6 +23,7 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
+
                 <h1 className="font-montserrat text-5xl font-bold mb-10">
                 What i've been working on
                 </h1>

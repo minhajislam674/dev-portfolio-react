@@ -10,7 +10,7 @@ export const MeetApp = () => {
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
 
-                <div className="flex flex-row gap-9 mx-auto mb-5">
+                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -118,7 +118,7 @@ export const MeetApp = () => {
                 This is because Enzyme is no longer actively supported in React-based applications.
                 </p>
 
-                <div className="flex flex-row gap-9 mx-auto mb-10">
+                <div className="flex flex-row gap-9 mx-auto mb-10 text-blue-light">
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 

@@ -11,7 +11,7 @@ export const ChatApp = () => {
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
 
-                <div className="flex flex-row gap-9 mx-auto mb-5">
+                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -128,7 +128,7 @@ export const ChatApp = () => {
                 The next step would be to implement the ability to send audio messages in addition to text and images. Additionally, I plan to upgrade from anonymous authentication to Phone or Email/Password authentication. 
                 </p>
 
-                <div className="flex flex-row gap-9 mx-auto mb-5">
+                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
