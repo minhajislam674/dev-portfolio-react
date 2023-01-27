@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-light': '#60a5fa',
-        'blue': '#2ec7ff',
+        'blue-light': '#7ed6df',
+        'blue': '#22a6b3',
         'purple': '#7e5bef',
         'pink': '#ff49db',
         'orange': '#ff7849',
@@ -16,7 +16,7 @@ module.exports = {
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
         'bg-dark':'#0b1120',
-        'white':'#e2e8f0',
+        'white':'#dff9fb',
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

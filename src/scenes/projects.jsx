@@ -6,6 +6,7 @@ import projectImg2 from '../assets/Project-two-01.jpg';
 import projectImg3 from '../assets/Project-three-01.jpg';
 
 export const Projects = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -27,6 +28,8 @@ export const Projects = () => {
                 </h1>
             </motion.div>
 
+            {/* 1st Project */}
+
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -39,9 +42,9 @@ export const Projects = () => {
             >
                 <div class="grid gap-10 lg:grid-cols-2 mb-16">
                     <div class="flex flex-col text-left">
-                        <h1 class="text-4xl mb-2">OscarFlicks </h1>
+                        <h1 class="text-4xl mb-2 font-bold text-blue-light">OscarFlicks </h1>
                         <p class="text-xl leading-8">
-                            OscarFlicks was a project I built as part of my full-stack web development program at CareerFoundry to demonstrate my mastery of full-stack JavaScript development. The goal of the project was to develop the complete server-side and client-side for the application from scratch.
+                        With OscarFlicks, users can easily search and filter through a wide range of Oscar-winning films, view detailed information about each film, and even sign up to be able to add films to their list of favorites.
                         </p>
                         <NavLink to="/projects/oscar-flicks">
                             <button
@@ -61,6 +64,8 @@ export const Projects = () => {
                 </div>
             </motion.div>
 
+            {/* 2nd Project */}
+
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -79,10 +84,8 @@ export const Projects = () => {
                         />
                     </div>
 
-
-
                     <div class="flex flex-col text-left ">
-                        <h1 class="text-4xl mb-2">ChatMate App</h1>
+                        <h1 class="text-4xl mb-2 font-bold text-blue-light">ChatMate App</h1>
                         <p class="text-xl leading-8">
                             ChatMate is an app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
                         </p>
@@ -98,6 +101,8 @@ export const Projects = () => {
                 </div>
             </motion.div>
 
+            {/* 3rd Project */}
+
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -110,7 +115,7 @@ export const Projects = () => {
             >
                 <div class="grid gap-10 lg:grid-cols-2 mb-10">
                     <div class="flex flex-col text-left">
-                        <h1 class="text-4xl mb-2">Meet App </h1>
+                        <h1 class="text-4xl mb-2 font-bold text-blue-light">Meet App </h1>
                         <p class="text-xl leading-8">
                             Meet App is a serverless, progressive web application (PWA) built with React using 
                             a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. 
@@ -133,11 +138,6 @@ export const Projects = () => {
                     </div>
                 </div>
             </motion.div>
-
-
-            
-
-            
         </div>
     )
 }

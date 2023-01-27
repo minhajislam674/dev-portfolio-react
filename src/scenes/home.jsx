@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import resume from "../assets/Islam-Minhaj-Resume.pdf"
 
 export const Home = ({setSelectedPage}) => {
     useEffect(() => {
@@ -31,17 +32,32 @@ export const Home = ({setSelectedPage}) => {
                 </h1>
 
                 <p style={{lineHeight: 1.2}} className="mt-5 mb-7 font-montserrat xs:text-2xl md:text-5xl leading-8 font-bold " >
-                A Full-stack Javascript developer based in Germany. My passion is building simple and beautiful user experiences. I love to keep learning and evolving.
+                A Full-stack Javascript developer based in Germany. My passion is building simple and beautiful user experiences.
                 </p>
- 
+                <div className="flex gap-3 lg:flex-row xs:flex-col">
                 <NavLink to="/projects">
                     <button
                         type="button"
-                        className="py-4 w-48 mr-5border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                        className="py-3 w-48 mr-5border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                     >  
                     SEE MY WORK
                     </button>
                 </NavLink>
+                
+
+                <a  href={resume} target="_blank" rel="noopener noreferrer">
+                    <button
+                        type="button"
+                        className="py-3 w-48 mr-5 border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                    >
+                        RESUME
+                    </button>         
+                </a>  
+                </div>
+ 
+
+
+
                     
             </motion.div>       
         </div>

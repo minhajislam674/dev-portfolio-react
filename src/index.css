@@ -20,7 +20,7 @@ body,
 
 /* Style the thumb (the part of the scrollbar that you can drag) */
 ::-webkit-scrollbar-thumb {
-  background-color: #60a5fa; /* Set the background color of the thumb */
+  background-color: #7ed6df; /* Set the background color of the thumb */
   border-radius: 0.4em; /* Set the border radius of the thumb */
 }
 
