@@ -47,14 +47,14 @@ export const ChatApp = () => {
                         <h2 className="font-montserrat text-3xl font-bold mb-2">
                             Links
                         </h2>
-                        {/* <a 
+                        <a 
                             className="text-xl md:text-start leading-8  text-blue-light hover:underline"
-                            href="https://minhajislam674.github.io/meet/"
+                            href="https://chatmate-demo.netlify.app/"
                             target="_blank"
                             rel="noreferrer"
                          >
                             Live Demo
-                        </a> */}
+                        </a>
                         <a  
                             className="text-xl md:text-start leading-8 text-blue-light hover:underline"
                             href="https://github.com/minhajislam674/chat-app"
