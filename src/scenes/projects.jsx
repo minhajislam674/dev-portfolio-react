@@ -47,20 +47,22 @@ export const Projects = () => {
                         <p class="text-xl leading-8">
                         With OscarFlicks, users can easily search and filter through a wide range of Oscar-winning films, view detailed information about each film, and even sign up to be able to add films to their list of favorites.
                         </p>
-                        <NavLink to="/projects/oscar-flicks">
-                            <button
-                                type="button"
-                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
-                            >  
+                        <NavLink
+                            to="/projects/oscar-flicks"
+                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                        >
                             VIEW PROJECT
-                            </button>
                         </NavLink>
                     </div>
                     <div>
+                        <NavLink to="/projects/oscar-flicks">
                         <img 
                             src={projectImg}
                             alt="OscarFlicks"
+                            className="rounded-2xl hover:opacity-90 hover:cursor-pointer"
+                            
                         />
+                        </NavLink>
                     </div>
                 </div>
             </motion.div>
@@ -79,10 +81,13 @@ export const Projects = () => {
             >
                 <div class="grid gap-10 lg:grid-cols-2 mb-16">
                     <div>
+                        <NavLink to="/projects/chat-app">
                         <img
                             src={projectImg2}
                             alt="ChatMate App"
+                            className="rounded-2xl hover:opacity-90 hover:cursor-pointer"
                         />
+                        </NavLink>
                     </div>
 
                     <div class="flex flex-col text-left ">
@@ -90,13 +95,11 @@ export const Projects = () => {
                         <p class="text-xl leading-8">
                             ChatMate is an app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
                         </p>
-                        <NavLink to="/projects/chat-app">
-                            <button
-                                type="button"
-                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
-                            >  
+                        <NavLink
+                            to="/projects/chat-app"
+                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                        >
                             VIEW PROJECT
-                            </button>
                         </NavLink>
                     </div>
                 </div>
@@ -122,20 +125,21 @@ export const Projects = () => {
                             a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. 
                             It provides users access to different tech events and workshops around the world.
                         </p>
-                        <NavLink to="/projects/meet-app">
-                            <button
-                                type="button"
-                                className="mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
-                            >  
+                        <NavLink
+                            to="/projects/meet-app"
+                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                        >
                             VIEW PROJECT
-                            </button>
                         </NavLink>
                     </div>
                     <div>
+                        <NavLink to="/projects/meet-app">
                         <img 
                             src={projectImg3}
                             alt="Meet App"
+                            className="rounded-2xl hover:opacity-90 hover:cursor-pointer"
                         />
+                        </NavLink>
                     </div>
                 </div>
             </motion.div>

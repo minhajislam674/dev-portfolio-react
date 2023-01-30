@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="w-10/12 mx-auto">
         <div className="md:flex justify-center md:justify-between pt-5">
           <p className="font-montserrat text-sm text-white md:justify-end text-left">
-            <span className="font-bold text-lg"> ©2022. Minhaj Islam</span>
+            <span className="font-bold text-lg"> ©2023. Minhaj Islam</span>
             <br></br>
             Built and designed with 💙 by Minhaj Islam
           </p>
