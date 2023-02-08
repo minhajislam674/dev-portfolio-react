@@ -15,7 +15,15 @@ const Navbar = () => {
     return (
         <nav className={`z-40 w-full bg-bg-dark fixed top-0 py-6`}>
           <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-playfair text-3xl font-bold text-blue-light">MI</h4>
+            <h4 className="font-playfair text-3xl font-bold text-blue-light">
+              <NavLink
+                      to="/"
+                      exact
+                      className="site-icon"
+              >
+                MI
+              </NavLink>
+            </h4>
     
             {/* DESKTOP NAV */}
             {isDesktop ? (

@@ -2,3 +2,6 @@
     text-decoration: underline;
     text-underline-offset: 10;
 }
+.site-icon {
+    text-decoration: none;
+}

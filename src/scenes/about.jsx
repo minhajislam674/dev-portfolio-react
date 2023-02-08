@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import imageMinhaj from "../assets/headshot.png"
+import imageMinhaj from "../assets/minhaj-islam.jpeg"
 
 export const About = () => {
 
@@ -37,7 +37,7 @@ export const About = () => {
                     </div>
                     <div className="rounded-lg">
                         <img 
-                            className="rounded-2xl bg-cover bg-center w-72"
+                            className="bg-cover bg-center w-64"
                             alt="Minhaj"
                             src={imageMinhaj}>
                         </img>
@@ -59,7 +59,7 @@ export const About = () => {
 
             <div className="mb-16">
                 <h2 className="font-montserrat text-4xl mt-5 font-bold text-blue-light">
-                    Who am I?
+                    Personal Profile
                 </h2>
                 <p className="mt-2 mb-2 text-md text-xl md:text-start leading-8">
                 📍 I was born and raised in Dhaka, Bangladesh. I moved to Kiel, Germany in 2018 where I did my Master, and then I moved to Essen in July 2022 where I'm currently living.
@@ -68,7 +68,7 @@ export const About = () => {
                 🌏 I value intercultural exchanges! My broader goal in life is deepening my understanding about the ways of different cultures, and discovering the magic that the world has in store on different terrains. 
                 </p>
                 <p className="mt-2 mb-2 text-md text-xl md:text-start leading-8">          
-                🎥 I have a passion for outdoor activities, particularly hiking and enjoy documenting my experiences through <a rel="noreferrer" className=" hover:underline text-blue-light" href="https://www.youtube.com/@MinhajTakim/videos" target="_blank">videography</a>. 
+                🎥 I have a passion for outdoor activities, particularly hiking and and I have a keen eye for capturing and sharing my adventures through <a rel="noreferrer" className=" hover:underline text-blue-light" href="https://www.youtube.com/@MinhajTakim/videos" target="_blank">videography</a>. 
                 </p>
                 <p className="mt-2 mb-10 text-md text-xl md:text-start leading-8">
                 📖 I enjoy reading books, particularly those by Haruki Murakami and Yuval Noah Harari.
@@ -110,7 +110,7 @@ export const About = () => {
                     <div className="rounded-lg p-2">
                         <h3 className="font-montserrat text-2xl  mt-2 underline-offset-5 underline underline-offset-8">Web Development Expertise</h3>
                         <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
-                        I am a certified web developer. I completed 900+ hours of professional training with over 50 assignments
+                        I completed 900+ hours of professional training in full-stack development with over 50 assignments
                         reviewed and approved by industry experts.
                         </p>     
                     </div>
@@ -133,8 +133,8 @@ export const About = () => {
                         <h3 className="font-montserrat text-2xl  mt-2 underline underline-offset-8">Film & Media Competence</h3>
                         <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
                         I am a practitioner of Adobe Creative Cloud tools, and 
-                        I have experience working in media projects including <a rel="noreferrer" className=" hover:underline text-blue-light" href="https://www.youtube.com/watch?v=_Aj9vZ_mCY0" target="_blank">fundraising videos</a> and 
-                        behind-the-scenes <a rel="noreferrer"className=" hover:underline  text-blue-light" href="https://www.youtube.com/watch?v=8bbtqjnDtyQ" target="_blank">content for universities</a>.
+                        I have experience working in <a rel="noreferrer" className=" hover:underline text-blue-light" href="https://linktr.ee/minhaj_i" target="_blank"> media projects</a> including fundraising videos and 
+                        behind-the-scenes content for universities.
                         </p>
                     </div>
 

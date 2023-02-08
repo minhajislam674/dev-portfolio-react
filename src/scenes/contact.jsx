@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import instagram from "../assets/instagram.svg"
 import linkedin from "../assets/linkedin.svg"
 import github from "../assets/github.svg"
 
 export const Contact = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     return (
         <section
@@ -31,7 +26,7 @@ export const Contact = () => {
                 </h1>
 
                 <p className="mt-10 mb-7 text-xl " >
-                minhajislam674@gmail.com
+                minhajislam@outlook.de
                 </p>
 
                 <p className="mt-10 mb-2 text-xl"> Find me on:</p>
@@ -41,28 +36,15 @@ export const Contact = () => {
                     <a href="https://www.linkedin.com/in/minhajislam//" target="_blank" rel="noreferrer">
                         <img className="w-10 hover:opacity-75" src={linkedin} alt="instagram icon"/>
                     </a>
-                    <a href="https://www.instagram.com/minhajtakim/" target="_blank" rel="noreferrer">
-                        <img className="w-10 hover:opacity-75" src={instagram} alt="instagram icon"/>
-                    </a>
                     <a href="https://github.com/minhajislam674/" target="_blank" rel="noreferrer">
                         <img className="w-10 hover:opacity-75" src={github} alt="instagram icon"/>
+                    </a>
+                    <a href="https://www.instagram.com/minhajtakim/" target="_blank" rel="noreferrer">
+                        <img className="w-10 hover:opacity-75" src={instagram} alt="instagram icon"/>
                     </a>
                 </div>
 
             </motion.div>
-
-            <motion.div
-                className="flex mt-5 justify-center md:justify-start"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-                variants={{
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0 },
-                }}
-            >
-            </motion.div> 
         </div>
     </section>
     )
