@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import resume from "../assets/Islam-Minhaj-Resume.pdf"
+import resume from "../assets/Minhaj-Islam-Resume.pdf";
+import externalLinkIcon from "../assets/external-link.svg";
 
 export const Home = ({setSelectedPage}) => {
     useEffect(() => {
@@ -38,20 +39,23 @@ export const Home = ({setSelectedPage}) => {
                 <NavLink to="/projects">
                     <button
                         type="button"
-                        className="py-3 w-48 mr-5border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
+                        className="py-3 w-48 h-18 mr-5 border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-#7ed6df transition duration-500"
                     >  
                     SEE MY WORK
                     </button>
                 </NavLink>
                 
 
-                <a  href={resume} target="_blank" rel="noopener noreferrer">
+                <a  href={resume} target="_blank" rel="noopener noreferrer" className="flex justify-center py-2 w-48 gap-3 items-center border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-#7ed6df transition duration-500">
                     <button
-                        type="button"
-                        className="py-3 w-48 mr-5 border-solid border-2 border-blue-light font-semibold md:text-xl text-blue-light  hover:bg-blue hover:text-black transition duration-500"
                     >
                         RESUME
-                    </button>         
+                    </button>
+                    <img
+                    src={externalLinkIcon}
+                    alt="external link icon"
+                    />
+
                 </a>  
                 </div>
  
