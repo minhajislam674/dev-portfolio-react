@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
+import backIcon from "../../assets/back-outline.svg";
 
 
 export const MovieApp = () => {
@@ -10,7 +11,8 @@ export const MovieApp = () => {
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
             
-                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
+                <div className="flex flex-row mx-auto mb-5 text-blue">
+                    <img src={backIcon}></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -23,14 +25,7 @@ export const MovieApp = () => {
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    <div>
-                        <h2 className="font-montserrat text-3xl font-bold">
-                            Type
-                        </h2>
-                        <p className="mt-2 text-xl md:text-start" >
-                            Film Database
-                        </p>
-                    </div>
+
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">
                             Stack
@@ -47,7 +42,7 @@ export const MovieApp = () => {
                             Links
                         </h2>
                         <a 
-                            className="text-xl md:text-start leading-8  text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8  text-blue hover:underline"
                             href="https://oscar-flicks.netlify.app/"
                             target="_blank"
                             rel="noreferrer"
@@ -55,7 +50,7 @@ export const MovieApp = () => {
                             Live Demo
                         </a>
                         <a  
-                            className="text-xl md:text-start leading-8 text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8 text-blue hover:underline"
                             href="https://myflix-movies.onrender.com/documentation/"
                             target="_blank"
                             rel="noreferrer"
@@ -63,7 +58,7 @@ export const MovieApp = () => {
                             API Endpoints
                         </a>
                         <a  
-                            className="text-xl md:text-start leading-8 text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8 text-blue hover:underline"
                             href="https://github.com/minhajislam674/myflix-react"
                             target="_blank"
                             rel="noreferrer"
@@ -135,10 +130,11 @@ export const MovieApp = () => {
                 <p className="mt-2 mb-10 text-md text-xl md:text-start leading-8">
                     The application required several different views, and implementing routing to handle these different views and provide a seamless navigation experience for the users was a significant challenge. Besides, in development mode, when I ran the application on my local machine, the JavaScript code was able to manipulate the current URL and redirect the user to a different page. However, in production, when the application is deployed on a static host like Netlify, the routing is handled by the server. So, I faced several issues like handling the 404 error pages after deployment, but with the help of my mentor and tutor, and by carefully handling the routes and navigation, I was able to tackle the problems.
                 </p>
-                <div className="flex flex-row gap-9 mx-auto mb-10 text-blue-light">
+
+                <div className="flex flex-row mx-auto mb-10 text-blue">
+                    <img src={backIcon}></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
-            
         </div>
     )
 }

@@ -9,7 +9,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #0b1120;
+  background-color: #002B34;
   @apply text-white;
 }
 
@@ -20,11 +20,11 @@ body,
 
 /* Style the thumb (the part of the scrollbar that you can drag) */
 ::-webkit-scrollbar-thumb {
-  background-color: #7ed6df; /* Set the background color of the thumb */
+  background-color: #7ED6DF ; /* Set the background color of the thumb */
   border-radius: 0.4em; /* Set the border radius of the thumb */
 }
 
 /* Style the track (the part of the scrollbar that the thumb sits on) */
 ::-webkit-scrollbar-track {
-  background-color: #edf2f7; /* Set the background color of the track */
+  background-color: white; /* Set the background color of the track */
 }

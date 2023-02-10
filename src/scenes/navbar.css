@@ -1,6 +1,7 @@
 .active {
     text-decoration: underline;
     text-underline-offset: 10;
+    text-decoration-color: #7ed6df;
 }
 .site-icon {
     text-decoration: none;

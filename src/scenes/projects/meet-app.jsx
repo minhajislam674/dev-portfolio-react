@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
 
+import backIcon from "../../assets/back-outline.svg";
+
 
 export const MeetApp = () => {
     useEffect(() => {
@@ -10,7 +12,8 @@ export const MeetApp = () => {
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
 
-                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
+                <div className="flex flex-row mx-auto mb-5 text-blue">
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -23,14 +26,7 @@ export const MeetApp = () => {
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    <div>
-                        <h2 className="font-montserrat text-3xl font-bold">
-                            Type
-                        </h2>
-                        <p className="mt-2 text-xl md:text-start" >
-                            Social App
-                        </p>
-                    </div>
+
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">
                             Stack
@@ -47,7 +43,7 @@ export const MeetApp = () => {
                             Links
                         </h2>
                         <a 
-                            className="text-xl md:text-start leading-8  text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8  text-blue hover:underline"
                             href="https://minhajislam674.github.io/meet/"
                             target="_blank"
                             rel="noreferrer"
@@ -55,7 +51,7 @@ export const MeetApp = () => {
                             Live Demo
                         </a>
                         <a  
-                            className="text-xl md:text-start leading-8 text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8 text-blue hover:underline"
                             href="https://github.com/minhajislam674/meet"
                             target="_blank"
                             rel="noreferrer"
@@ -118,12 +114,10 @@ export const MeetApp = () => {
                 This is because Enzyme is no longer actively supported in React-based applications.
                 </p>
 
-                <div className="flex flex-row gap-9 mx-auto mb-10 text-blue-light">
+                <div className="flex flex-row mx-auto mb-10 text-blue">
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
-
-
-            
         </div>
     )
 }

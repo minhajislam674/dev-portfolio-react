@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
 // import { NavLink } from "react-router-dom";
+import backIcon from "../../assets/back-outline.svg";
 
 
 export const ChatApp = () => {
@@ -11,7 +12,8 @@ export const ChatApp = () => {
     return (
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
 
-                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
+                <div className="flex flex-row mx-auto mb-5 text-blue">
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -24,14 +26,7 @@ export const ChatApp = () => {
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-                    <div>
-                        <h2 className="font-montserrat text-3xl font-bold">
-                            Type
-                        </h2>
-                        <p className="mt-2 text-xl md:text-start" >
-                            Social App
-                        </p>
-                    </div>
+
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">
                             Stack
@@ -48,7 +43,7 @@ export const ChatApp = () => {
                             Links
                         </h2>
                         <a 
-                            className="text-xl md:text-start leading-8  text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8  text-blue hover:underline"
                             href="https://chatmate-demo.netlify.app/"
                             target="_blank"
                             rel="noreferrer"
@@ -56,7 +51,7 @@ export const ChatApp = () => {
                             Live Demo
                         </a>
                         <a  
-                            className="text-xl md:text-start leading-8 text-blue-light hover:underline"
+                            className="text-xl md:text-start leading-8 text-blue hover:underline"
                             href="https://github.com/minhajislam674/chat-app"
                             target="_blank"
                             rel="noreferrer"
@@ -128,7 +123,8 @@ export const ChatApp = () => {
                 The next step would be to implement the ability to send audio messages in addition to text and images. Additionally, I plan to upgrade from anonymous authentication to Phone or Email/Password authentication. 
                 </p>
 
-                <div className="flex flex-row gap-9 mx-auto mb-5 text-blue-light">
+                <div className="flex flex-row mx-auto mb-10 text-blue">
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
