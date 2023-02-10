@@ -13,9 +13,9 @@ const Navbar = () => {
 
 
     return (
-        <nav className={`z-40 w-full bg-bg-dark fixed top-0 py-6`}>
+        <nav className={`z-40 w-full bg-bg-dark  fixed top-0 py-6`}>
           <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-playfair text-3xl font-bold text-blue-light">
+            <h4 className="font-playfair text-3xl font-bold text-white">
               <NavLink
                       to="/"
                       exact
@@ -27,10 +27,10 @@ const Navbar = () => {
     
             {/* DESKTOP NAV */}
             {isDesktop ? (
-              <div className=" flex justify-between gap-16 font-opensans text-xl font-semibold text-blue-light">
+              <div className=" flex justify-between gap-16 font-opensans text-xl font-semibold text-white">
                 <NavLink
                     to="/"
-                    className="hover:underline underline-offset-8"
+                    className="hover:underline decoration-blue underline-offset-8"
                     activeClassName="active"
                     exact
                 >
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className="hover:underline underline-offset-8"
+                    className="hover:underline decoration-blue underline-offset-8"
                     activeClassName="text-blue"
                     exact
                 >
@@ -46,7 +46,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to="/projects"
-                    className="hover:underline underline-offset-8"
+                    className="hover:underline decoration-blue underline-offset-8"
                     activeClassName="text-blue"
                     exact
                 >
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className="hover:underline underline-offset-8"
+                    className="hover:underline decoration-blue underline-offset-8"
                     activeClassName="text-blue"
                     exact
                 >
@@ -73,7 +73,7 @@ const Navbar = () => {
     
             {/* MOBILE MENU POPUP */}
             {!isDesktop && isMenuToggled && (
-              <div className="fixed right-0 bottom-0 h-full bg-blue w-[50%]">
+              <div className="fixed right-0 bottom-0 h-full bg-olive w-[50%]">
                 {/* CLOSE ICON */}
                 <div className="flex justify-end p-12">
                   <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
                     <NavLink
                         to="/"
-                        className="hover:underline underline-offset-8"
+                        className="hover:underline decoration-blue underline-offset-8"
                         activeClassName="text-blue"
                         exact   
                         onClick={() => setIsMenuToggled(false)}
@@ -95,7 +95,7 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink
                         to="/about"
-                        className="hover:underline underline-offset-8"
+                        className="hover:underline decoration-blue underline-offset-8"
                         activeClassName="text-blue"
                         exact
                         onClick={() => setIsMenuToggled(false)}
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink
                         to="/projects"
-                        className="text-deep-blue"
+                        className="hover:underline decoration-blue underline-offset-8"
                         activeClassName="text-blue"
                         exact
                         onClick={() => setIsMenuToggled(false)}
@@ -113,7 +113,7 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink
                         to="/contact"
-                        className="text-deep-blue"
+                        className="hover:underline decoration-blue underline-offset-8"
                         activeClassName="text-blue"
                         exact
                         onClick={() => setIsMenuToggled(false)}

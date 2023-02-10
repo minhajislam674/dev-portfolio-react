@@ -21,13 +21,11 @@ export const Contact = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <h1 className="font-montserrat text-5xl font-bold">
-                Let's build something together!
+                <h1 className="font-montserrat text-5xl text-blue font-bold">
+                Let's build something great together!
                 </h1>
-
-                <p className="mt-10 mb-7 text-xl " >
-                minhajislam@outlook.de
-                </p>
+                <p className="mt-10 mb-2 text-xl">Email me at:</p>
+                <a className="mt-10 mb-7 text-xl underline hover:text-blue" href="mailto:minhajislam@outlook.de">minhajislam@outlook.de</a>
 
                 <p className="mt-10 mb-2 text-xl"> Find me on:</p>
 

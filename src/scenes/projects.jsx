@@ -5,6 +5,7 @@ import projectImg from '../assets/Project-one-01.jpg';
 import projectImg2 from '../assets/Project-two-01.jpg';
 import projectImg3 from '../assets/Project-three-01.jpg';
 
+
 export const Projects = () => {
 
     useEffect(() => {
@@ -12,7 +13,7 @@ export const Projects = () => {
     }, []);
 
     return (
-        <div className="lg:w-3/6 xs:w-5/6 mx-auto  mt-12 xs:mt-32  text-white ">
+        <div className="xl:w-3/6 xs:w-5/6  mx-auto  mt-12 xs:mt-32  text-white ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -24,8 +25,8 @@ export const Projects = () => {
                 }}
             >
 
-                <h1 className="font-montserrat text-5xl font-bold mb-10">
-                What I've been working on...
+                <h1 className="font-montserrat text-5xl text-blue font-bold mb-10">
+                What I've been building...
                 </h1>
             </motion.div>
 
@@ -41,21 +42,21 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 lg:grid-cols-2 mb-16">
+                <div class="grid gap-10 md:grid-cols-2 mb-24">
                     <div class="flex flex-col text-left">
                         <h1 class="text-4xl mb-2 font-bold text-blue-light">OscarFlicks </h1>
                         <p class="text-xl leading-8">
                         With OscarFlicks, users can easily search and filter through a wide range of Oscar-winning films, view detailed information about each film, and even sign up to be able to add films to their list of favorites.
                         </p>
-                        <div className="flex flex-wrap gap-2 text-xl mt-5  mb-12">
+                        <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap']
                             .map((item) => (
-                            <p className="text-white p-2 bg-blue rounded-lg">{item}</p>
+                            <p className="text-bg-dark p-2 bg-white font-bold  rounded-lg">{item}</p>
                         ))}
                         </div>
                         <NavLink
                             to="/projects/oscar-flicks"
-                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-#7ed6df transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>
@@ -65,7 +66,7 @@ export const Projects = () => {
                         <img 
                             src={projectImg}
                             alt="OscarFlicks"
-                            className="rounded-2xl hover:opacity-90 hover:cursor-pointer"
+                            className="rounded-2xl hover:opacity-90 hover:cursor-pointer w-98"
                             
                         />
                         </NavLink>
@@ -85,22 +86,22 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 lg:grid-cols-2 mb-16">
+                <div class="grid gap-10 md:grid-cols-2 mb-24">
                     <div class="flex flex-col text-left ">
                         <h1 class="text-4xl mb-2 font-bold text-blue-light">ChatMate App</h1>
                         <p class="text-xl leading-8">
                             ChatMate is an app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
                         </p>
-                        <div className="flex flex-wrap gap-2 text-xl mt-5  mb-12">
+                        <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React Native', 'Expo', 'GiftedChat', 'Firebase']
                             .map((item) => (
-                            <p className="text-white p-2 bg-blue rounded-lg">{item}</p>
+                            <p className="text-bg-dark p-2 bg-white font-bold rounded-lg">{item}</p>
                         ))}
                         </div>
 
                         <NavLink
                             to="/projects/chat-app"
-                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-#7ed6df transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid  font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>
@@ -129,7 +130,7 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 lg:grid-cols-2 mb-10">
+                <div class="grid gap-10 md:grid-cols-2 mb-10">
                     <div class="flex flex-col text-left">
                         <h1 class="text-4xl mb-2 font-bold text-blue-light">Meet App </h1>
                         <p class="text-xl leading-8">
@@ -137,16 +138,16 @@ export const Projects = () => {
                             a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. 
                             It provides users access to different tech events and workshops around the world.
                         </p>
-                        <div className="flex flex-wrap gap-2 text-xl mt-5  mb-12">
+                        <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React', 'AWS Lambda', 'Jest', 'Enzyme', 'Pupeeteer']
                             .map((item) => (
-                            <p className="text-white p-2 bg-blue rounded-lg">{item}</p>
+                            <p className="text-bg-dark p-2 bg-white font-bold  rounded-lg">{item}</p>
                         ))}
                         </div>
 
                         <NavLink
                             to="/projects/meet-app"
-                            className="flex flex-row justify-center mt-8 px-8 py-4 mr-5 border-solid border-2 border-blue-light font-semibold text-xl text-blue-light  hover:bg-blue hover:text-#7ed6df transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>

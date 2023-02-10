@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-light': '#7ed6df',
-        'blue': '#22a6b3',
+        'olive-light': '#94B0B3',
+        'blue': '#7ED6DF',
+        'olive': '#324B4E',
         'purple': '#7e5bef',
         'pink': '#ff49db',
         'orange': '#ff7849',
@@ -15,8 +16,8 @@ module.exports = {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
-        'bg-dark':'#0b1120',
-        'white':'#dff9fb',
+        'bg-dark':'#002B34',
+        'light':'#dff9fb',
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -37,8 +38,11 @@ module.exports = {
       'xs': '320px',
       'sm': '640px',
       'md': '768px',
+      'xmd': '960px',
       'lg': '1024px',
       'xl': '1280px',
+      '2xl': '1536px',
+      
   },
   },
   plugins: [],
