@@ -3,7 +3,6 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { NavLink } from "react-router-dom";
 import closeicon from "../assets/close-icon.svg";
 import menuicon from "../assets/menu-icon.svg";
-
 import './navbar.css';
 
 
@@ -18,7 +17,6 @@ const Navbar = () => {
             <h4 className="font-playfair text-3xl font-bold text-white">
               <NavLink
                       to="/"
-                      exact
                       className="site-icon"
               >
                 MI
@@ -31,37 +29,33 @@ const Navbar = () => {
                 <NavLink
                     to="/"
                     className="hover:underline decoration-blue underline-offset-8"
-                    activeClassName="active"
-                    exact
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/about"
                     className="hover:underline decoration-blue underline-offset-8"
-                    activeClassName="text-blue"
-                    exact
+
                 >
                     About   
                 </NavLink>
                 <NavLink
                     to="/projects"
                     className="hover:underline decoration-blue underline-offset-8"
-                    activeClassName="text-blue"
-                    exact
+
                 >
                     Projects
                 </NavLink>
                 <NavLink
                     to="/contact"
                     className="hover:underline decoration-blue underline-offset-8"
-                    activeClassName="text-blue"
-                    exact
+
                 >
                     Contact
                 </NavLink>
 
               </div>
+              
             ) : (
               <button
                 className="rounded-full bg-red p-2"
@@ -69,6 +63,7 @@ const Navbar = () => {
               >
                 <img alt="menu-icon" src={menuicon}/>
               </button>
+              
             )}
     
             {/* MOBILE MENU POPUP */}
@@ -86,8 +81,6 @@ const Navbar = () => {
                     <NavLink
                         to="/"
                         className="hover:underline decoration-blue underline-offset-8"
-                        activeClassName="text-blue"
-                        exact   
                         onClick={() => setIsMenuToggled(false)}
                         
                     >
@@ -96,8 +89,6 @@ const Navbar = () => {
                     <NavLink
                         to="/about"
                         className="hover:underline decoration-blue underline-offset-8"
-                        activeClassName="text-blue"
-                        exact
                         onClick={() => setIsMenuToggled(false)}
                     >
                         About
@@ -105,8 +96,6 @@ const Navbar = () => {
                     <NavLink
                         to="/projects"
                         className="hover:underline decoration-blue underline-offset-8"
-                        activeClassName="text-blue"
-                        exact
                         onClick={() => setIsMenuToggled(false)}
                     >
                         Projects
@@ -114,8 +103,6 @@ const Navbar = () => {
                     <NavLink
                         to="/contact"
                         className="hover:underline decoration-blue underline-offset-8"
-                        activeClassName="text-blue"
-                        exact
                         onClick={() => setIsMenuToggled(false)}
                     >
                         Contact

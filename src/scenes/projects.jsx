@@ -42,21 +42,21 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 md:grid-cols-2 mb-24">
-                    <div class="flex flex-col text-left">
-                        <h1 class="text-4xl mb-2 font-bold text-blue-light">OscarFlicks </h1>
-                        <p class="text-xl leading-8">
+                <div className="grid gap-10 md:grid-cols-2 mb-24">
+                    <div className="flex flex-col text-left">
+                        <h1 className="text-4xl mb-2 font-bold text-blue-light">OscarFlicks </h1>
+                        <p className="text-xl leading-8">
                         With OscarFlicks, users can easily search and filter through a wide range of Oscar-winning films, view detailed information about each film, and even sign up to be able to add films to their list of favorites.
                         </p>
                         <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap']
-                            .map((item) => (
-                            <p className="text-bg-dark p-2 bg-white font-bold  rounded-lg">{item}</p>
+                            .map((item, index) => (
+                            <p key={index} className="text-olive p-2 bg-white  font-bold  rounded-lg">{item}</p>
                         ))}
                         </div>
                         <NavLink
                             to="/projects/oscar-flicks"
-                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl bg-blue-dark hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>
@@ -86,22 +86,22 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 md:grid-cols-2 mb-24">
-                    <div class="flex flex-col text-left ">
-                        <h1 class="text-4xl mb-2 font-bold text-blue-light">ChatMate App</h1>
-                        <p class="text-xl leading-8">
+                <div className="grid gap-10 md:grid-cols-2 mb-24">
+                    <div className="flex flex-col text-left ">
+                        <h1 className="text-4xl mb-2 font-bold text-blue-light">ChatMate App</h1>
+                        <p className="text-xl leading-8">
                             ChatMate is an app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
                         </p>
                         <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React Native', 'Expo', 'GiftedChat', 'Firebase']
-                            .map((item) => (
-                            <p className="text-bg-dark p-2 bg-white font-bold rounded-lg">{item}</p>
+                            .map((item, index) => (
+                            <p key={index} className="text-olive p-2 bg-white  font-bold rounded-lg">{item}</p>
                         ))}
                         </div>
 
                         <NavLink
                             to="/projects/chat-app"
-                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid  font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid  font-semibold text-xl bg-blue-dark hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>
@@ -130,24 +130,24 @@ export const Projects = () => {
                 visible: { opacity: 1, x: 0 },
                 }}
             >
-                <div class="grid gap-10 md:grid-cols-2 mb-10">
-                    <div class="flex flex-col text-left">
-                        <h1 class="text-4xl mb-2 font-bold text-blue-light">Meet App </h1>
-                        <p class="text-xl leading-8">
+                <div className="grid gap-10 md:grid-cols-2 mb-10">
+                    <div className="flex flex-col text-left">
+                        <h1 className="text-4xl mb-2 font-bold text-blue-light">Meet App </h1>
+                        <p className="text-xl leading-8">
                             Meet App is a serverless, progressive web application (PWA) built with React using 
                             a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. 
                             It provides users access to different tech events and workshops around the world.
                         </p>
                         <div className="flex flex-wrap gap-2 text-sm mt-5  mb-8">
                         {['React', 'AWS Lambda', 'Jest', 'Enzyme', 'Pupeeteer']
-                            .map((item) => (
-                            <p className="text-bg-dark p-2 bg-white font-bold  rounded-lg">{item}</p>
+                            .map((item, index) => (
+                            <p key={index} className="text-olive p-2 bg-white font-bold  rounded-lg">{item}</p>
                         ))}
                         </div>
 
                         <NavLink
                             to="/projects/meet-app"
-                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl border-2 bg-olive hover:bg-olive-light transition duration-500"
+                            className="flex flex-row justify-center px-8 py-4 mr-5 border-solid font-semibold text-xl  bg-blue-dark hover:bg-olive-light transition duration-500"
                         >
                             VIEW PROJECT
                         </NavLink>

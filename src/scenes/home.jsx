@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import resume from "../assets/Minhaj-Islam-Resume.pdf";
 import externalLinkIcon from "../assets/external-link.svg";
 
-export const Home = ({setSelectedPage}) => {
+export const Home = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -39,14 +40,14 @@ export const Home = ({setSelectedPage}) => {
                 <NavLink to="/projects">
                     <button
                         type="button"
-                        className="py-3 w-48 h-18 mr-5  font-semibold md:text-xl text-white  bg-olive  border-2 hover:bg-olive-light hover:text-#7ed6df transition duration-500"
+                        className="py-3 w-48 h-18 mr-5  font-semibold md:text-xl text-white  bg-blue-dark  hover:bg-olive-light hover:text-#7ed6df transition duration-500"
                     >  
                     SEE MY WORK
                     </button>
                 </NavLink>
                 
 
-                <a  href={resume} target="_blank" rel="noopener noreferrer" className="flex justify-center py-2 w-48 gap-3 items-center border-2 bg-olive font-semibold md:text-xl text-white  hover:bg-olive-light transition duration-500">
+                <a  href={resume} target="_blank" rel="noopener noreferrer" className="flex justify-center py-2 w-48 gap-3 items-center border-2 font-semibold md:text-xl text-white  hover:bg-olive-light transition duration-500">
                     <button
                     >
                         RESUME
