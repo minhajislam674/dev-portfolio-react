@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
-// import { NavLink } from "react-router-dom";
 import backIcon from "../../assets/back-outline.svg";
 
 
@@ -25,7 +24,7 @@ export const ChatApp = () => {
                 ChatMate is an app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
 
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">

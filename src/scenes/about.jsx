@@ -41,7 +41,7 @@ export const About = () => {
                     About 
                 </h1>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-2">
                     <div>
                     <h2 className="font-montserrat text-4xl font-bold text-blue-light">
                         Why am I a developer?
@@ -173,8 +173,8 @@ export const About = () => {
 
                 <div className="flex flex-wrap gap-2 text-xl  mb-6">
                 {['Javascript', 'HTML', 'CSS', 'React', 'React Native', 'Bootstrap', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Firebase']
-                    .map((item) => (
-                    <p className="text-white italic pr-6">{item}</p>
+                    .map((item, index) => (
+                    <p key={index} className="text-white italic pr-6">{item}</p>
                 ))}
                 </div>
 
@@ -184,8 +184,8 @@ export const About = () => {
 
                 <div className="flex flex-wrap gap-2 text-xl  mb-12">
                 {['TypeScript', 'Angular', 'Next.js', 'AWS']
-                    .map((item) => (
-                    <p className="text-white italic pr-6">{item}</p>
+                    .map((item, index) => (
+                    <p key={index} className="text-white italic pr-6">{item}</p>
                 ))}
                 </div>
 

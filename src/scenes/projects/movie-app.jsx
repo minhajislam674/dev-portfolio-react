@@ -12,7 +12,7 @@ export const MovieApp = () => {
         <div className="lg:w-3/6 xs:w-5/6 mx-auto mt-12 xs:mt-32  text-white">
             
                 <div className="flex flex-row mx-auto mb-5 text-blue">
-                    <img src={backIcon}></img>
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
 
@@ -24,7 +24,7 @@ export const MovieApp = () => {
                 With OscarFlicks, users can easily search and filter through a wide range of Oscar-winning films, view detailed information about each film, and even sign up to be able to add films to their list of favorites.
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
 
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">
@@ -132,7 +132,7 @@ export const MovieApp = () => {
                 </p>
 
                 <div className="flex flex-row mx-auto mb-10 text-blue">
-                    <img src={backIcon}></img>
+                    <img src={backIcon} alt="back to projects"></img>
                     <NavLink className="no-underline"  to="/projects">Back to Projects</NavLink>
                 </div>
         </div>

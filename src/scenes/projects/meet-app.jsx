@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
-
 import backIcon from "../../assets/back-outline.svg";
 
 
@@ -25,7 +24,7 @@ export const MeetApp = () => {
                     Meet App is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD). The app uses the Google Calendar API to fetch upcoming events. It provides users access to different tech events and workshops around the world.
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
 
                     <div>
                         <h2 className="font-montserrat text-3xl font-bold">

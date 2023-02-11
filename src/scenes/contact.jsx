@@ -29,7 +29,7 @@ export const Contact = () => {
 
                 <p className="mt-10 mb-2 text-xl"> Find me on:</p>
 
-                <div class="flex items-center gap-5">
+                <div className="flex items-center gap-5">
                     
                     <a href="https://www.linkedin.com/in/minhajislam//" target="_blank" rel="noreferrer">
                         <img className="w-10 hover:opacity-75" src={linkedin} alt="instagram icon"/>
