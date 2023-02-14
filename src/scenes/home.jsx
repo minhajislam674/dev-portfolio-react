@@ -34,7 +34,7 @@ export const Home = () => {
                 </h1>
 
                 <p style={{lineHeight: 1.2}} className="mt-5 mb-7 font-montserrat xs:text-2xl md:text-5xl leading-8 font-bold " >
-                A full-stack developer based in Germany. My passion is building simple and beautiful user experiences.
+                A full-stack developer based in Germany. My passion is building seamless and appealing user interfaces for web applications.
                 </p>
                 <div className="flex gap-3 lg:flex-row xs:flex-col">
                 <NavLink to="/projects">

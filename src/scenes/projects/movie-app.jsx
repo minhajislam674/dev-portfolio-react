@@ -68,7 +68,7 @@ export const MovieApp = () => {
                     </div>
                 </div>
                 <img
-                    src={require("../../assets/movie-app-01.jpg")}
+                    src={require("../../assets/movie-app-01.webp")}
                     alt="meet-app"
                     className="h-auto pb-5"
                 >

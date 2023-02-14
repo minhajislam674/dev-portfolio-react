@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import imageMinhaj from "../assets/minhaj-islam.jpeg"
+import imageMinhaj from "../assets/minhaj-islam.webp"
 import caretDown from "../assets/caret-down-outline.svg";
 import caretForward from "../assets/caret-forward-outline.svg";
 
