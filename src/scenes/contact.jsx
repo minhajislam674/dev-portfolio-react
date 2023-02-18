@@ -32,13 +32,13 @@ export const Contact = () => {
                 <div className="flex items-center gap-5">
                     
                     <a href="https://www.linkedin.com/in/minhajislam//" target="_blank" rel="noreferrer">
-                        <img className="w-10 hover:opacity-75" src={linkedin} alt="instagram icon"/>
+                        <img className="w-10 hover:opacity-75" src={linkedin} alt="Linkedin icon"/>
                     </a>
                     <a href="https://github.com/minhajislam674/" target="_blank" rel="noreferrer">
-                        <img className="w-10 hover:opacity-75" src={github} alt="instagram icon"/>
+                        <img className="w-10 hover:opacity-75" src={github} alt="Github icon"/>
                     </a>
                     <a href="https://www.instagram.com/minhajtakim/" target="_blank" rel="noreferrer">
-                        <img className="w-10 hover:opacity-75" src={instagram} alt="instagram icon"/>
+                        <img className="w-10 hover:opacity-75" src={instagram} alt="Instagram icon"/>
                     </a>
                 </div>
 
