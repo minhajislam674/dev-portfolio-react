@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #002B34;
+  background-color: #2c3333;
   @apply text-white;
 }
 
@@ -20,7 +20,7 @@ body,
 
 /* Style the thumb (the part of the scrollbar that you can drag) */
 ::-webkit-scrollbar-thumb {
-  background-color: #7ED6DF ; /* Set the background color of the thumb */
+  background-color: #7ed6df; /* Set the background color of the thumb */
   border-radius: 0.4em; /* Set the border radius of the thumb */
 }
 
