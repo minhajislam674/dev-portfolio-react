@@ -78,9 +78,9 @@ export const About = () => {
                         Personal Profile
                     </h2> */}
           <p className="mt-2 mb-2 text-md text-xl md:text-start leading-8">
-            📍 I was born and raised in Dhaka, Bangladesh. I moved to Kiel,
-            Germany in 2018 where I did my Master, and then I moved to Essen in
-            July 2022 where I'm currently living.
+            📍 Born and raised in Dhaka, Bangladesh, I moved to Germany in 2018
+            for my Master's studies. I quickly fell in love with the language
+            and way of life here, and I've called Germany home ever since.
           </p>
           <p className="mt-2 mb-2 text-md text-xl md:text-start leading-8">
             🌏 I value intercultural exchanges! My broader goal in life is
@@ -120,54 +120,6 @@ export const About = () => {
         }}
       ></motion.div>
 
-      {/* <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-                }}
-            >
-                <h2 className="font-montserrat text-4xl mb-5 font-bold text-blue-light">
-                    What do I bring to the table?
-                </h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 "> 
-                    <div className="rounded-lg p-2">
-                        <h3 className="font-montserrat text-2xl  mt-2 underline-offset-5 underline underline-offset-8">Web Development Expertise</h3>
-                        <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
-                        I completed 900+ hours of professional training in full-stack development with over 50 assignments
-                        reviewed and approved by industry experts.
-                        </p>     
-                    </div>
-                    <div className="rounded-lg  p-2">
-                        <h3 className="font-montserrat text-2xl mt-2 underline underline-offset-8">Openness to learn</h3>
-                        <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
-                        I firmly believe in the German adage 'Man lernt nie aus' and 
-                        I’m always excited to work on new projects, 
-                        because I learn something new every time.
-                        </p>
-                    </div>
-                    <div className="rounded-lg  p-2 hover:border-3">
-                        <h3 className="font-montserrat text-2xl  mt-2 underline underline-offset-8">Science Background</h3>
-                        <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
-                        My master's degree in Environmental Management has provided me with a strong foundation in research
-                         and data analytics, enabling me to approach technical challenges from a unique perspective.
-                        </p>
-                    </div>
-                    <div className="rounded-lg  p-2">
-                        <h3 className="font-montserrat text-2xl  mt-2 underline underline-offset-8">Film & Media Competence</h3>
-                        <p className="mt-2 mb-5 text-md text-xl md:text-start leading-8">
-                        I am a practitioner of Adobe Creative Cloud tools, and 
-                        I have experience working in <a rel="noreferrer" className=" hover:underline text-blue-light" href="https://linktr.ee/minhaj_i" target="_blank"> media projects</a> including fundraising videos and 
-                        behind-the-scenes content for universities.
-                        </p>
-                    </div>
-
-                </div>
-                </motion.div> */}
-
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -182,18 +134,10 @@ export const About = () => {
           Skills
         </h2>
         <p className="mt-2 mb-5 text-xl md:text-start leading-8">
-          I recently graduated from a{" "}
-          <a
-            rel="noreferrer"
-            className=" hover:text-blue underline"
-            href="https://careerfoundry.com/"
-            target="_blank"
-          >
-            coding school
-          </a>{" "}
-          where I gained hands-on experience with full-stack JavaScript
-          development, REST architecture, agile methodologies, as well as and
-          collaboration and documentation.
+          I recevied full-stack software development training from a coding
+          school in Berlin where I gained hands-on experience with full-stack
+          JavaScript development, REST architecture, agile methodologies, and
+          Test Driven Development (TDD) practice.
         </p>
         <p className="mt-2 mb-2 text-xl  font-bold md:text-start leading-8">
           I'm comfortable with:
@@ -212,7 +156,10 @@ export const About = () => {
             "Express",
             "MongoDB",
             "PostgreSQL",
-            "Firebase",
+            "Prisma",
+            "Git",
+            "Jest",
+            "Swagger",
           ].map((item, index) => (
             <p key={index} className="text-white italic pr-6">
               {item}
@@ -225,7 +172,7 @@ export const About = () => {
         </p>
 
         <div className="flex flex-wrap gap-2 text-xl  mb-12">
-          {["TypeScript", "Angular", "Next.js", "AWS"].map((item, index) => (
+          {["TypeScript", "AWS", "GraphQL"].map((item, index) => (
             <p key={index} className="text-white italic pr-6">
               {item}
             </p>
