@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import resume from "../assets/Minhaj-Islam-Resume.pdf";
 import externalLinkIcon from "../assets/external-link.svg";
 
 export const Home = () => {
@@ -40,7 +39,7 @@ export const Home = () => {
               className="mt-5 mb-7 font-montserrat xs:text-2xl md:text-5xl leading-8 font-bold "
             >
               A full-stack developer based in Germany. My passion is building
-              seamless and appealing user interfaces for web applications.
+              clean, accessible, and responsive web applications.
             </p>
             <div className="flex gap-3 lg:flex-row xs:flex-col">
               <NavLink to="/projects">
@@ -53,12 +52,12 @@ export const Home = () => {
               </NavLink>
 
               <a
-                href={resume}
+                href="https://www.linkedin.com/in/minhajislam/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center py-2 w-48 gap-3 items-center border-2 font-semibold md:text-xl text-white  hover:bg-olive-light transition duration-500"
               >
-                <button>RESUME</button>
+                <button>LINKEDIN</button>
                 <img src={externalLinkIcon} alt="external link icon" />
               </a>
             </div>
